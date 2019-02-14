@@ -4,7 +4,7 @@
 
 ### deploy
 ```
-git clone vim git@github.com:yongcongwang/vim_config.git ~/.vim && 
+git clone -b vim git@github.com:yongcongwang/software-config.git ~/.vim && 
 ln -s ~/.vim/vimrc ~/.vimrc
 ```
 
