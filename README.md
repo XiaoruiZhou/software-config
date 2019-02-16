@@ -29,5 +29,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ### Deploy
 ```
 git clone -b zsh git@github.com:yongcongwang/software-config.git ~/.zsh && 
+rm ~/.zshrc &&
 ln -s ~/.zsh/zshrc ~/.zshrc
 ```
