@@ -1,7 +1,7 @@
 "*************** vim-plug config *******************
 call plug#begin('~/.vim/plugged')
 
-Plug 'https://github.com/sickill/vim-monokai'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 Plug 'plasticboy/vim-markdown'
 
@@ -52,7 +52,7 @@ let g:vim_markdonw_folding_disabled=1
 " ******************* Vim Config ***********************
 set nu! " set num
 
-colorscheme  monokai " theme: 
+colorscheme  dracula " theme: 
 
 syntax enable "highlight syntax
 
