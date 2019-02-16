@@ -2,6 +2,11 @@
 
 ## vim
 
+### Install
+```
+sudo apt-get install vim
+```
+
 ### Deploy
 ```
 git clone -b vim git@github.com:yongcongwang/software-config.git ~/.vim && 
@@ -31,4 +36,16 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 git clone -b zsh git@github.com:yongcongwang/software-config.git ~/.zsh && 
 rm ~/.zshrc &&
 ln -s ~/.zsh/zshrc ~/.zshrc
+```
+
+## tmux
+### Install
+```
+sudo apt-get install tmux
+```
+
+### Deploy
+```
+git clone -b tmux git@github.com:yongcongwang/software-config.git ~/.tmux && 
+ln -s ~/.tmux/tmuxrc ~/.tmuxrc
 ```
