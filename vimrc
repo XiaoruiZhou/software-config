@@ -3,6 +3,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'dracula/vim', { 'as': 'dracula' }
 
+Plug 'altercation/vim-colors-solarized'
+
 Plug 'plasticboy/vim-markdown'
 
 Plug 'octol/vim-cpp-enhanced-highlight'
@@ -52,7 +54,7 @@ let g:vim_markdonw_folding_disabled=1
 " ******************* Vim Config ***********************
 set nu! " set num
 
-colorscheme  dracula " theme: 
+colorscheme  solarized " theme: 
 
 syntax enable "highlight syntax
 
