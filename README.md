@@ -47,5 +47,8 @@ sudo apt-get install tmux
 ### Deploy
 ```
 git clone -b tmux git@github.com:yongcongwang/software-config.git ~/.tmux && 
-ln -s ~/.tmux/tmuxrc ~/.tmuxrc
+ln -s ~/.tmux/tmux.conf ~/.tmux.conf &&
+git clone https://github.com/tmux-plugins/tmp ~/.tmux/plugins/tpm
 ```
+
+### Setting
