@@ -20,7 +20,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 ```
 
 In `vim`:
-`:PluginINstall`
+`:PlugInstall`
 
 
 ## zsh
