@@ -9,6 +9,8 @@ Plug 'plasticboy/vim-markdown'
 
 Plug 'octol/vim-cpp-enhanced-highlight'
 
+Plug 'python-mode/python-mode', { 'branch': 'develop' }
+
 call plug#end()            " required
 
 " ******************* Cpp Config ***********************
@@ -54,6 +56,8 @@ let g:vim_markdonw_folding_disabled=1
 " ******************* Vim Config ***********************
 set nu! " set num
 
+set background=dark "dark mode
+
 colorscheme  solarized " theme: 
 
 syntax enable "highlight syntax
@@ -61,8 +65,6 @@ syntax enable "highlight syntax
 syntax on
 
 set t_Co=256
-
-set background=dark "dark mode
 
 set showmatch " set match mode
 
