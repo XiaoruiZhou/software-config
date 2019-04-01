@@ -13,7 +13,7 @@ Plug 'python-mode/python-mode', { 'branch': 'develop' }
 
 call plug#end()            " required
 
-" ******************* Cpp Config ***********************
+" ******************* cpp config ***********************
 function AddTemplate_cpp()
 	let infor = "// By yongcong.wang @ ".strftime("%d/%m/%Y")."\n"
 	silent put! = infor
@@ -23,7 +23,7 @@ autocmd BufNewFile *.cc call AddTemplate_cpp()
 autocmd BufNewFile *.cpp call AddTemplate_cpp()
 autocmd BufNewFile *.h call AddTemplate_cpp()
 
-" ******************* python Config ********************
+" ******************* python config ********************
 function AddTemplate_py()
 	let infor = "#!/usr/bin/env python3\n"
 	\."# -*- coding: utf-8 -*-\n"
@@ -33,7 +33,7 @@ endfunction
 
 autocmd BufNewFile *.py call AddTemplate_py()
 
-" ******************* python Config ********************
+" ******************* bash config ********************
 function AddTemplate_sh()
 	let infor = "#!/bin/bash\n"
 	\."# By yongcong.wang @ ".strftime("%d/%m/%Y")."\n"
@@ -41,6 +41,14 @@ function AddTemplate_sh()
 endfunction
 
 autocmd BufNewFile *.sh call AddTemplate_sh()
+
+" ******************* yaml config ********************
+function AddTemplate_yaml()
+	let infor = "# By yongcong.wang @ ".strftime("%d/%m/%Y")."\n"
+	silent put! = infor
+endfunction
+
+autocmd BufNewFile *.yaml call AddTemplate_yaml()
 
 " ********** cpp-enhanced-highlight Config *************
 let g:cpp_class_scope_highlight = 1
@@ -82,7 +90,8 @@ set noundofile " no undo file
 
 set clipboard+=unnamed " share clipboard with windows
 
-set colorcolumn=81 "80 charactor
+set colorcolumn=101 "100 charactor
+
 
 set tabstop=2 " tab = 2 spaces
 
