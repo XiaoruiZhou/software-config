@@ -1,4 +1,4 @@
-"*************** vim-plug config *******************
+"************** vim-plug config *******************
 call plug#begin('~/.vim/plugged')
 
 Plug 'dracula/vim', { 'as': 'dracula' }
@@ -100,3 +100,11 @@ set shiftwidth=2 " auto ai 2 space
 set expandtab " replace tab by space
 
 set nofoldenable " no fold code
+
+autocmd cursorhold * set nohlsearch " cursor hold, stop highlight search
+
+noremap n :set hlsearch<cr>n
+noremap N :set hlsearch<cr>N
+noremap / :set hlsearch<cr>/
+noremap ? :set hlsearch<cr>?
+noremap * *:set hlsearch<cr>?
