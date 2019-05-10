@@ -10,7 +10,7 @@ export ZSH="/home/wyc/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="kphoen"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -96,6 +96,9 @@ export DEFAULT_USER="wyc"
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+# communicate mode
+set -o vi
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -107,4 +110,5 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 source /opt/ros/kinetic/setup.zsh
 eval $(/home/wyc/.brewery/bin/brewery --env)
 source /home/wyc/octopus3/devel/setup.zsh
-export ROS_MASTER_URI=http://qiyuan2013.bj.tusimple.ai:11311
+export ROS_MASTER_URI=http://wyc-ros.bj.tusimple.ai:11311
+source /home/wyc/octopus3/scripts/env.sh
